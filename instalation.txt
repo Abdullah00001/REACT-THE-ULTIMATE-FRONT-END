@@ -1,5 +1,12 @@
-project create command : npm create vite@latest DigiFood -- --template react
+project create command : npm create vite@latest coreConcept3 -- --template react
 cd my-project
+
+=================================================================
+
+######################################################
+
+TAILWIND-CSS
+Instalation :
 
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
@@ -9,6 +16,41 @@ content: [
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
 
+-------------
+| index.CSS |
+-------------
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#######################################################
+
+=========================================================================
+
+#######################################################
+
+#REACT-ROUTER
+
+INSTALATION: npm install react-router-dom
+
+#######################################################
+
+==========================================================================
+
+######################################################
+
+#FLOWBITE-COMPONENTS LIBRARY
+flowbite-INSTALATION
+
+npm install flowbite flowbite-react
+content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "node_modules/flowbite-react/lib/esm/**/*.js",
+  ],
+plugins: [
+        require('flowbite/plugin')
+]
+
+########################################################
+
