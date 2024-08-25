@@ -1,4 +1,4 @@
-project create command : npm create vite@latest coreConcept3 -- --template react
+project create command : npm create vite@latest post-frontend -- --template react
 cd my-project
 
 =================================================================
