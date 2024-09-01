@@ -1,4 +1,4 @@
-project create command : npm create vite@latest CRUD_FRONT-END -- --template react
+project create command : npm create vite@latest react-authentication2 -- --template react
 cd my-project
 
 =================================================================

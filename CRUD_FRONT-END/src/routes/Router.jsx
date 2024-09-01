@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import CreatePost from "../pages/CreatePost";
 import Posts from "../pages/Posts";
 import PostDetails from "../pages/PostDetails";
+import EditPost from "../pages/EditPost";
 
 export const Router = createBrowserRouter([
   {
@@ -26,6 +27,12 @@ export const Router = createBrowserRouter([
       {
         path: "/posts/:id",
         element: <PostDetails />,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/post/${params.id}`),
+      },
+      {
+        path: "/posts/Edit/:id",
+        element: <EditPost />,
         loader: ({ params }) =>
           fetch(`http://localhost:5000/post/${params.id}`),
       },
